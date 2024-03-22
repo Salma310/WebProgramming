@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styleAnimate.css">
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function() {
+                $(".box")
+                    .animate({width: "300px"}) //membuat animasi kotak melebar
+                    .animate({height: "300px"}) //membuat animasi kotak membesar
+                    .animate({marginLeft:"150px"})  //membuat animasi kotak mengarah ke kiri
+                    .animate({borderWidth:"10px"}) //membuat animasi agar kotak diberi border
+                    .animate({opacity:0.5}); //membuat animasi agar kotak dikurangi opacitynya
+            });
+        });
+    </script>
+    <title>Chaining Method</title>
+</head>
+<body>
+    <button type="button">Start Animation</button>
+    <div class="box"></div>
+    
+</body>
+</html>

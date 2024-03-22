@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+    <script src ="jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function() {
+                $("#box").load("/WebProgramming/5-JQUERY/test-content.html");
+            });
+        });
+    </script>
+    <title>Ajax Test</title>
+</head>
+<body>  
+    <div id="box">
+        <h2>Klik tombol dibawah untuk menampilkan konten</h2>
+    </div>
+    <button type="button">Klik Saya!</button>
+</body>
+</html>

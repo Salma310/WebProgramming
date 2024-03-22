@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+    <title>Selector JQuery</title>
+    <script src ="jquery-3.7.1.js"></script>
+    <script>
+       $(document).ready(function(){
+        //baris kode jQuery
+            $("button").click(function() {  //selector tag
+                $("h2").hide(); //selector tag
+                $(".subjudul").hide();  //selector class
+                $("#paragraf").hide();  //selector id
+                $("#paragraf.dua").hide();  //selector id
+                $("div p.paragraf").hide();  //selector tag
+            });
+        });
+    </script>
+</head>
+<body> 
+    <h2>Ini adalah Judul Bab</h2>
+    <h3 class="subjudul">Ini adalah Sub Judul Bab</h3>
+    <p id = "paragraf">Ini adalah Paragraf Pertama</p>
+    <p id = "paragraf" class="dua">Ini adalah Paragraf Kedua</p>
+    <div>
+        <p class="paragraf">
+            Ini adalah Paragraf ketiga
+        </p>
+    </div>
+    <p>Ini paragraf yang akan tetap ditampilkan</p>
+    <button>Klik Saya!</button>
+</body>
+</html>
